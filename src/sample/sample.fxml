@@ -1,0 +1,26 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <VBox>
+        <TextField visible="true" promptText="Enter xo" fx:id="x0"/>
+        <Separator visible="true" />
+        <TextField visible="true" promptText="Enter yo" fx:id="y0"/>
+        <Separator visible="true"/>
+        <TextField visible="true" promptText="Enter xmax" fx:id="xmax"/>
+        <Separator visible="true"/>
+        <TextField visible="true" promptText="Enter dx" fx:id="dx"/>
+        <Separator visible="true"/>
+        <TextArea text="Result will appere here" fx:id="result"/>
+        <Separator visible="true"/>
+        <Button text="Get Result" fx:id="resultButton" onAction="#calcResult"/>
+
+    </VBox>
+</GridPane>
