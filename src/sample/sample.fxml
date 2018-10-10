@@ -7,6 +7,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <VBox>
@@ -21,6 +24,12 @@
         <TextArea text="Result will appere here" fx:id="result"/>
         <Separator visible="true"/>
         <Button text="Get Result" fx:id="resultButton" onAction="#calcResult"/>
-
-    </VBox>
+        <LineChart fx:id="lineChart" layoutX="29.0" layoutY="194.0" prefHeight="416.0" prefWidth="1222.0">
+            <xAxis>
+                <NumberAxis  fx:id="xAxis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis"  side="LEFT" upperBound="160.0" />
+            </yAxis>
+        </LineChart>    </VBox>
 </GridPane>
